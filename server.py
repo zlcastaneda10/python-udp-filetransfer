@@ -33,7 +33,7 @@ class Server(object):
     def __init__(self):
         """Start up the server"""
         # This must be the address that the server is running on
-        self.ip = gethostbyname(gethostname()) # Change this as needed
+        self.ip = '157.253.205.7' # Change this as needed
         self.port, self.p_err = self.get_args()
         self.address = (self.ip, self.port)
         self.buffer_ = 2048 # Change as needed
